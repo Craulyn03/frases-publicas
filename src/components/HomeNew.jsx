@@ -25,13 +25,13 @@ const HomeNew = () => {
   };
 
   const onSubmit = async (data) => {
-    const { data: dato, error } = await supabase.from("Frase").insert([data]);
+    await supabase.from("Frase").insert([data]);
     setEstado(false);
   };
 
   useEffect(() => {
     const fetchClient = async () => {
-      const { data, error } = await supabase.from("Frase").select();
+      const { data } = await supabase.from("Frase").select();
       setFrasePublica(data.pop().frase);
       // setFrasePublica(data.map((el) => el.frase));
     };
