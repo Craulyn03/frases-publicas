@@ -2,7 +2,7 @@ import HomeNew from "./components/HomeNew";
 
 function App() {
   return (
-    <div className="App">
+    <div>
       <HomeNew />
     </div>
   );
