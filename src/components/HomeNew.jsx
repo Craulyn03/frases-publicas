@@ -47,7 +47,6 @@ const HomeNew = () => {
             <textarea
               {...register("frase", {
                 required: true,
-                minLength: 20,
                 maxLength: 200,
               })}
               type="text"
@@ -76,7 +75,7 @@ const HomeNew = () => {
               </div>
             )}
             <button type="submit" className="btn-ok" onClick={guardarCambios}>
-              Guardar Cambios
+              ENVIAR DATOS
             </button>
           </form>
         </div>
