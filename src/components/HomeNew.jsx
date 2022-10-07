@@ -2,6 +2,7 @@ import React, { Fragment, useState, useEffect } from "react";
 import { useForm } from "react-hook-form";
 import "../Style/home.css";
 import { supabase } from "../supabaseClient";
+import Prueba from "./Prueba";
 
 const HomeNew = () => {
   const [estado, setEstado] = useState(false);
@@ -40,6 +41,8 @@ const HomeNew = () => {
 
   return (
     <Fragment>
+      <h2>HOLA SOY UN COMPONENTE NUEVO</h2>
+      <Prueba />
       {estado ? (
         <div className="editar-frase-publica">
           <h1 className="title">MOTIVAME CON TU FRASE</h1>
