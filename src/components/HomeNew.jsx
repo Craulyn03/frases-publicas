@@ -82,7 +82,7 @@ const HomeNew = () => {
         </div>
       ) : (
         <div className="frase-publica-container">
-          <h1 className="title">MOTIVAME CON TU FRASE</h1>
+          <h1 className="title">"" MOTIVAME CON TU FRASE ""</h1>
           <p className="frase-publica">{frasePublica}</p>
           <button className="btn-editar" onClick={editarFrase}>
             EDITAR FRASE
